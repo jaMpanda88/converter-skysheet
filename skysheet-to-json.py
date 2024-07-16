@@ -12,7 +12,7 @@ for filename in skysheet_files:
     file_path = os.path.join(base_dir, filename)
     
     # Read the content of the file
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
     
     # Load the SKYSHEET content as JSON
